@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Premium</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <!--Part of the navigation-->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-body" data-bs-theme="dark" style="background-color: blue;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            Coffee 
+            Premium
+          </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#carousel-movimento">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#cards-3">Cards</a>
+                  </li>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-3" type="search" placeholder="Digite" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+      <!--The end part of the navigation-->
+
+      <!--Part of the carousel-->
+      
+      <div id="carousel-exemplo" class="carousel slide carousel-fade carousel-caption" data-bs-ride="carousel">
+        <div class="carousel-inner" id="carousel-movimento">
+            <div data-bs-interval="3000" class="carousel-item active">
+              <img src="./img/Cappuccino 1.jpg" alt="">
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+              <img src="./img/Capuccino 2.jpg" alt="">
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+              <img src="./img/Cappuccino 3.jpg" alt="">
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+      
+    <!--The end part of the carrousel-->
+
+    <!--Part of the cards-->
+
+    <div class="container" id="cards-3">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="./img/Cappuccino 1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Processamento premium</h5>
+                <p class="card-text">Utilizamos exclusivamente grãos de café arábica, conhecidos por sua qualidade superior e perfil de sabor distinto. Cada lote é processado com maestria para preservar as nuances naturais do café, resultando em uma experiência de degustação verdadeiramente memorável.</p>
+              </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./img/Capuccino 2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Variedades exclusivas</h5>
+                <p class="card-text">Apresentamos regularmente edições limitadas de cafés especiais, destacando variedades únicas e raras cultivadas em microclimas específicos. Essas seleções exclusivas oferecem uma oportunidade única de explorar o mundo diversificado do café colombiano.</p>
+              </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./img/Cappuccino 3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Compromentimento em qualidade</h5>
+                <p class="card-text">Estamos tão confiantes na qualidade do nosso café que oferecemos uma garantia de satisfação. Se por algum motivo você não estiver completamente satisfeito, faremos o possível para garantir que sua experiência conosco seja excepcional.</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
